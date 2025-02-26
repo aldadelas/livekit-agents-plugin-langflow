@@ -46,5 +46,10 @@
   "bugs": {
     "url": "https://github.com/aldadelas/livekit-agents-plugin-langflow/issues"
   },
-  "homepage": "https://github.com/aldadelas/livekit-agents-plugin-langflow#readme"
+  "homepage": "https://github.com/aldadelas/livekit-agents-plugin-langflow#readme",
+  "publishConfig": {
+    "access": "public",
+    "@aldadelas:registry": "https://npm.pkg.github.com",
+    "registry": "https://registry.npmjs.org/"
+  }
 }
