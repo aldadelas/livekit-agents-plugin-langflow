@@ -4,17 +4,17 @@ This is external plugin for livekit agents. This library is used to replace LLM 
 ## Installation
 Install the package using pnpm:
 ```typescript
-pnpm install @aldelas/livekit-agents-plugin-langflow
+pnpm install @aldadelas/livekit-agents-plugin-langflow
 ```
 
 Install the package using npm:
 ```typescript
-npm install @aldelas/livekit-agents-plugin-langflow
+npm install @aldadelas/livekit-agents-plugin-langflow
 ```
 
 Install the package using yarn:
 ```typescript
-yarn add @aldelas/livekit-agents-plugin-langflow
+yarn add @aldadelas/livekit-agents-plugin-langflow
 ```
 
 ## Usage

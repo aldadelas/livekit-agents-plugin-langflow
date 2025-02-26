@@ -1,7 +1,14 @@
 {
-  "name": "@aldelas/livekit-agents-plugin-langflow",
+  "name": "@aldadelas/livekit-agents-plugin-langflow",
   "version": "0.0.1",
   "description": "",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aldadelas/livekit-agents-plugin-langflow"
+  },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
