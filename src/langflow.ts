@@ -1,5 +1,5 @@
 import { LangflowClient } from '@datastax/langflow-client';
-import { llm, log } from '@livekit/agents';
+import { llm } from '@livekit/agents';
 import { randomUUID } from 'node:crypto';
 
 export type Tweak = Record<string, string | number | null | boolean>;
@@ -69,12 +69,7 @@ export class LLM extends llm.LLM {
 }
 
 export class LLMStream extends llm.LLMStream {
-  #toolCallId?: string;
-  #fncName?: string;
-  #fncRawArguments?: string;
   #client: LangflowClient;
-  #logger = log();
-  #id = randomUUID();
   label: string = 'langflow.LLMStream';
 
   constructor(
@@ -89,7 +84,7 @@ export class LLMStream extends llm.LLMStream {
     this.#run(opts);
   }
 
-  async #run(opts: Partial<LangflowOptions>) {
+  async #run(opts: Partial<LangflowOptions>): Promise<void> {
     try {
       const chatToSend = this.chatCtx.messages.pop()!.content!.toString();
       console.info('Sending chat to Langflow', chatToSend);

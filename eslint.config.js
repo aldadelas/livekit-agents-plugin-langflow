@@ -14,6 +14,10 @@ export default [
         ecmaVersion: 'latest',
         sourceType: 'module',
       },
+      globals: {
+        console: 'readonly',
+        process: 'readonly',
+      }
     },
     plugins: {
       '@typescript-eslint': typescript,
@@ -25,26 +29,6 @@ export default [
       '@typescript-eslint/no-explicit-any': 'warn',
       '@typescript-eslint/explicit-function-return-type': 'warn',
       '@typescript-eslint/no-unused-vars': 'warn',
-
-      // Import rules
-      'import/order': ['error', {
-        'groups': [
-          'builtin',
-          'external',
-          'internal',
-          ['parent', 'sibling'],
-          'index',
-        ],
-        'newlines-between': 'always',
-        'alphabetize': {
-          'order': 'asc',
-          'caseInsensitive': true
-        }
-      }],
-
-      // General rules
-      'no-console': 'warn',
-      'prettier/prettier': ['error'],
     },
   },
 ]; 
