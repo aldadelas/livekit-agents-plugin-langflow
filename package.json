@@ -1,0 +1,38 @@
+{
+  "name": "@aldelas/livekit-agents-plugin-langflow",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "format:check": "prettier --check \"**/src/**/*.{ts,tsx,md,json}\"",
+    "format:write": "prettier --write \"**/src/**/*.{ts,tsx,md,json}\"",
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
+    "lint:fix": "eslint \"src/**/*.{ts,tsx}\" --fix"
+  },
+  "keywords": [
+    "livekit-agents",
+    "langflow"
+  ],
+  "author": "Alda Delas",
+  "license": "ISC",
+  "packageManager": "pnpm@10.4.1",
+  "dependencies": {
+    "@datastax/langflow-client": "^0.2.0",
+    "@livekit/agents": "^0.7.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.0",
+    "@eslint/js": "^9.21.0",
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "@types/node": "^22.13.5",
+    "@typescript-eslint/eslint-plugin": "^8.25.0",
+    "@typescript-eslint/parser": "^8.25.0",
+    "eslint": "^9.21.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-prettier": "^5.2.3",
+    "typescript": "^5.7.3"
+  }
+}
