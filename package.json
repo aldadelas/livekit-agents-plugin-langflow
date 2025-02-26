@@ -1,9 +1,13 @@
 {
   "name": "@aldelas/livekit-agents-plugin-langflow",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "type": "module",
+  "files": [
+    "/dist/**/*"
+  ],
   "scripts": {
     "build": "tsc",
     "format:check": "prettier --check \"**/src/**/*.{ts,tsx,md,json}\"",
