@@ -1,5 +1,5 @@
 {
-    "include": ["./src"],
+    "include": ["src/**/*"],
     "exclude": ["node_modules"],
     "compilerOptions": {
         "target": "ES2022",
@@ -15,7 +15,8 @@
         "sourceMap": true,
         "composite": true,
         "declarationDir": "./dist",
-        "outDir": "./dist"
+        "outDir": "./dist",
+        "rootDir": "./src"
     }
   }
   
