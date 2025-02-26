@@ -60,9 +60,18 @@ export class LLM extends llm.LLM {
   chat({
     chatCtx,
     fncCtx,
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars, no-unused-vars
+    temperature,
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars, no-unused-vars
+    n,
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars, no-unused-vars
+    parallelToolCalls,
   }: {
     chatCtx: llm.ChatContext;
     fncCtx?: llm.FunctionContext;
+    temperature?: number;
+    n?: number;
+    parallelToolCalls?: boolean;
   }): llm.LLMStream {
     return new LLMStream(this, this.#client, chatCtx, fncCtx, this.#opts);
   }

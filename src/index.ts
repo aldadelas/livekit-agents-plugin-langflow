@@ -1,5 +1,5 @@
 export {
   type LangflowOptions,
-  LLM as LangflowLLM,
-  LLMStream as LangflowLLMStream,
+  LLM,
+  LLMStream,
 } from './langflow.js';
