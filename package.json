@@ -3,7 +3,8 @@
   "version": "0.0.2",
   "description": "",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "@aldadelas:registry": "https://npm.pkg.github.com",
+    "registry": "https://registry.npmjs.org/"
   },
   "repository": {
     "type": "git",
