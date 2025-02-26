@@ -1,10 +1,10 @@
 {
   "name": "@aldadelas/livekit-agents-plugin-langflow",
   "version": "0.1.0",
-  "description": "",
+  "description": "This is external plugin for livekit agents. This library is used to replace LLM with langflow",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aldadelas/livekit-agents-plugin-langflow"
+    "url": "git+https://github.com/aldadelas/livekit-agents-plugin-langflow.git"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -42,5 +42,9 @@
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-prettier": "^5.2.3",
     "typescript": "^5.7.3"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/aldadelas/livekit-agents-plugin-langflow/issues"
+  },
+  "homepage": "https://github.com/aldadelas/livekit-agents-plugin-langflow#readme"
 }
